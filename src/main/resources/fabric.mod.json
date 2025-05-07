@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "playerlogger",
+	"version": "1.0.0",
+	"name": "PlayerLogger",
+	"description": "一个用于记录玩家所有操作的服务器端Mod，帮助服务器管理员追踪玩家行为。",
+	"authors": [
+		"Ren"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/playerlogger/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"com.ren.playerlogger.PlayerLogger"
+		]
+	},
+	"mixins": [
+		"playerlogger.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
